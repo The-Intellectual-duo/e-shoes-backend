@@ -1,0 +1,3 @@
+CREATE DATABASE eshoes;
+CREATE USER eshoesuser WITH PASSWORD 'eshoes';
+GRANT ALL PRIVILEGES ON DATABASE eshoes TO eshoesuser;
