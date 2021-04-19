@@ -10,6 +10,11 @@ djangorestframework = "*"
 pylint = "*"
 django-extensions = "*"
 autopep8 = "*"
+django-cors-headers = "*"
+dj-database-url = "*"
+gunicorn = "*"
+djoser = "*"
+whitenoise = "*"
 
 [dev-packages]
 pylint = "*"

@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views 
 from rest_framework.routers import DefaultRouter
 
@@ -9,4 +9,6 @@ urlpatterns = [
     path('jordan/<int:pk>', views.JordanDetail.as_view(), name='jordan_detail'),
     path('puma/<int:pk>', views.PumaDetail.as_view(), name='puma_detail'),
     path('nike/<int:pk>', views.NikeDetail.as_view(), name='nike_detail'),
+    path('', include('djoser.urls')),
+    path('', include('djoser.urls.authtoken'))
 ]

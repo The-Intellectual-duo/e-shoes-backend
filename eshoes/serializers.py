@@ -1,5 +1,13 @@
 from rest_framework import serializers
 from .models import Jordan, Puma, Nike
+from djoser.serializers import UserCreateSerializer, UserSerializer
+from . import models
+
+class UserCreateSerializer(UserCreateSerializer):
+    
+    class Meta(UserCreateSerializer.Meta):
+        model = models.User
+        fields = ('id', 'email', 'username', 'password', 'avatar')
 
 class JordanSerializer(serializers.HyperlinkedModelSerializer):
     
