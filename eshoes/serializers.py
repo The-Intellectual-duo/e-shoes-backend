@@ -17,7 +17,7 @@ class JordanSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta: 
         model = Jordan
-        fields = ('id', 'image_url', 'name', 'price', 'jordan_url')
+        fields = ('id', 'image_url', 'name', 'price', 'description', 'jordan_url')
 
 
 class PumaSerializer(serializers.HyperlinkedModelSerializer):
@@ -28,7 +28,7 @@ class PumaSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Puma
-        fields = ('id', 'image_url', 'name', 'price', 'puma_url')
+        fields = ('id', 'image_url', 'name', 'price', 'description', 'puma_url')
 
 
 class NikeSerializer(serializers.HyperlinkedModelSerializer):
@@ -39,4 +39,4 @@ class NikeSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Nike
-        fields = ('id', 'image_url', 'name', 'price', 'nike_url')
+        fields = ('id', 'image_url', 'name', 'price', 'description', 'nike_url')
